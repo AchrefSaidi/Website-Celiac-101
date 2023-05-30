@@ -1,0 +1,69 @@
+
+.socials
+{
+  position: relative;
+  display: flex;
+
+}
+
+.socials li {
+  list-style: none;
+  position: relative;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.socials li a 
+{
+  text-decoration: none;
+}
+
+.socials li a .fa,.fab
+{
+  
+  color:grey;
+} 
+
+.socials li::before 
+{
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  height: 0;
+  overflow:hidden;
+  transition: 0.5s ease-in-out;
+  height:100%;
+}
+
+.socials li:nth-child(1)::before
+{
+  content: '\f099';
+  color:#1da1f2;
+}
+.socials li:nth-child(2)::before
+{
+  content:"\f16a";
+  color:red;
+
+}
+.socials li:nth-child(3)::before
+{
+  content:'\f16d';
+ 
+  background-color:#ff8177 ;
+  background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); ;
+  background-size:100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.socials li:nth-child(4)::before
+{
+  content:"\f082";
+  color:#1da1f2;
+}
+

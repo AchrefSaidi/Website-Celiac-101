@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="slideEffect.css">
+</head>
+<body>
+
+  <div class="specialist__body">
+
+    <ul class="specialist__nav">
+      <div id="marker"></div>
+      <li><a href="#">Profil Médecin</a></li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Retour</a></li>
+      
+    </ul>
+
+    <div class="specialist__info">
+
+      <img src="images/nutritionist.png" alt="">
+      <h1>Monsieur flen fouleni</h1>
+      <h2>Profession</h2>
+      <h4>Réseaux Sociaux</h4>
+
+
+    </div>
+
+
+   
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+  <script>
+    const marker = document.querySelector('#marker');
+    const item = document.querySelectorAll('ul li a');
+
+    function indicator(e){
+      marker.style.top = e.offsetTop+'px';
+      marker.style.width = e.offsetWidth+'px';
+    }
+
+    item.forEach(link => {
+      link.addEventListener('mouseover',(e =>{
+        indicator(e.target);
+      }))
+    })
+  </script>
+</body>
+</html>

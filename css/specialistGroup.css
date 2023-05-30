@@ -1,0 +1,32 @@
+.specialist__container .wavy
+{
+
+  text-align: center;
+  
+  
+}
+
+.card__wrapper .card .card__body .card__img.spec
+{
+  object-fit:contain;
+  margin-top: 20px;
+}
+
+.card__wrapper .card .card__body .card__description.spec,.card__wrapper .card .card__body .card__title.spec
+{
+  text-align: center;
+}
+
+.wavy__icon
+{
+  width: 50px;
+  height: 50px;
+}
+
+.specialist__container .wavy
+{
+  margin-bottom: 80px;
+}
+
+
+

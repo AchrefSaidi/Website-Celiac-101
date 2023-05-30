@@ -1,0 +1,41 @@
+.c1 {
+    color: #0B162C;
+    ;
+}
+
+.c2 {
+    color: #1C2942;
+
+}
+
+.c3 {
+    color: #3B556D;
+}
+.c4{
+     
+color: #5FC2BA;
+}
+.c5{
+    color: #137c8b ;
+}
+ .c6{
+     color: #999; 
+ }
+ 
+p {
+    color: #1C2942;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+* {
+    /*Pourr tout le document*/
+    box-sizing: border-box;
+    /* width= padding+width+border et Height= padding+height+border*/
+    margin: 0;
+    border: 0px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}

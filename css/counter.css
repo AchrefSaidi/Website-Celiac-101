@@ -1,0 +1,42 @@
+.container__don{
+    background-image: linear-gradient(#1c2942b4,#5FC2BA),url(../images/dons.png);
+    background-size: cover;
+    background-position: center;
+}
+.counter-section{
+    margin: 5% auto;
+    color: #fff; 
+}
+.counter-section > .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media screen and (max-width:750px) {
+    .counter-section > .row {
+        grid-template-columns: 1fr;
+    }
+}
+.counter-box{
+    text-align: center;
+}
+.iconbox{
+    border: 1px solid #fff;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+    transform: rotate(45deg);
+}
+.iconbox i{
+    font-size: 40px;
+    margin: 25px auto;
+    color: #1C2942;
+    transform: rotate(-45deg);
+}
+.counter-box p{
+    font-size: 20px;
+    color: #1C2942;
+}
+.counter-box .counter{
+    font-size: 80px;
+}

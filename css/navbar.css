@@ -1,0 +1,189 @@
+.navbar-custom {
+  background-color: #1c2942;
+  height: 80px;
+  
+  position: sticky;
+  z-index: 999;
+  top:0;
+}
+
+.navbar-custom a,
+.navbar-custom li {
+  color: white;
+}
+
+#dropService,#dropProfilIcon
+{
+
+  cursor: pointer;
+}
+
+.navbar-custom li:hover,
+.navbar-custom li a:hover,
+.dropdownService li a:hover,
+.dropdownProfil li a:hover,
+.dropdownProfil li:hover {
+  color: #137c8b !important;
+  cursor: pointer;
+
+}
+
+.logopic {
+  height: 80px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.pagename {
+  background-size:100%;
+  font-weight: 500;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  background-image:  linear-gradient(to right, #fff, #076585);
+  background-size:100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+}
+
+.navLinks {
+  display: inline-block;
+  margin: 0 0 0 25px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.navLinks li {
+  display: inline-block;
+  margin: 0 20px 0;
+}
+
+
+.righNavLinks {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  height: 80px;
+  margin: 0 25px 0 0;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.righNavLinks li {
+  padding: 0 20px 0;
+  display: inline-block;
+  line-height: 80px;
+}
+
+.menu-toggle 
+{
+  color:#fff;
+  float:right;
+  line-height: 80px;
+  font-size: 24px;
+  cursor:pointer;
+  display: none;
+}
+
+@media (max-width:991px)
+{
+
+  header 
+  {
+    padding: 0 20px;
+  }
+
+  .menu-toggle 
+  {
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .dropdownService
+{
+  position: fixed;
+  width: 100%;
+  /*height: calc(100vh -50px);*/
+  background:#3B556D ;
+  top:80px;
+  left:-110%;
+  transition: 0.5s;
+  display: block;
+  width: 420px;
+  margin-top: 20px;
+  
+  background-color: #1c2942;
+  margin-top: 2px;
+  text-decoration: none;
+  visibility: visible;
+  z-index: 40;
+}
+
+.dropdownService.display
+{
+
+  display: block;
+}
+
+
+
+  .navLinks
+  {
+   position: absolute;
+   width: 100%;
+   height: calc(100vh -50px);
+   background:#3B556D ;
+   top:80px;
+   left:-110%;
+   transition: 0.5s;
+   overflow:scroll;
+
+  }
+  
+  .navLinks.active
+  {
+    left:-23px;
+  }
+
+   .navLinks
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .navLinks li 
+  {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .navLinks li:hover a 
+  {
+    color:#fff;
+  }
+  .navLinks li a:hover 
+  {
+    color:#fff;
+  }
+
+   
+}
+
+
+
+
+
+
+
+
+
+

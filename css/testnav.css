@@ -1,0 +1,330 @@
+header 
+{
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 0 100px ;
+  background: #1C2942;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  z-index: 999;
+  top:0;
+  display: flex;
+}
+header .logo__container
+{
+  margin-right: 20px;
+  margin-left: -10px;
+  
+}
+.logopic {
+  height: 80px;
+  
+  padding: 5px;
+  vertical-align: middle;
+}
+
+
+
+
+.logoname{
+  background-size:100%;
+  vertical-align: middle;
+  line-height: 80px;
+  height: 80px;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  background-image:  linear-gradient(to right, #fff, #076585);
+  background-size:100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  
+}
+
+  .right__nav__links
+{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  height: 80px;
+  margin: 0 25px 0 0;
+  font-size: 20px;
+  vertical-align: middle;
+  
+}
+
+
+ .right__nav__links a {
+  padding: 0 10px 0;
+  display: inline-block;
+  line-height: 80px;
+}
+ .right__nav__links a
+{
+ color:#fff;
+}
+
+header nav .nav__links
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav .nav__links .link__item
+{
+  
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .nav__links .link__item .hidden__services
+{
+  background: #3B556D;
+  
+  border-radius: 20px;
+  width: 410px;
+  transition: 0.2 ease-in-out;
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  text-decoration: none;
+  visibility: visible;
+  z-index: 40;
+  position: absolute;
+  display: none;
+  
+}
+header nav .nav__links .link__item .hidden__services .service__hidden
+{
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  height: 40px;
+  line-height: 40px;
+  
+  
+}
+header nav .nav__links .link__item .hidden__services.blockDisplay 
+{
+  display: block;
+}
+
+
+
+
+header nav .nav__links .link__item a
+{
+  height: 80px;
+  line-height: 80px;
+  color:#fff;
+  text-decoration: none;
+  padding: 0 20px;
+  display: block;
+  
+}
+
+
+header nav .nav__links .link__item a:hover,header nav .nav__links .link__item a.active 
+{
+  color:#fff;
+  background: #5FC2BA;
+  
+}
+
+.menu-toggle 
+{
+  color:#fff;
+  float:right;
+  line-height: 80px;
+  font-size: 24px;
+  cursor:pointer;
+  visibility: hidden;
+  width: 30px;
+}
+
+.profile__hidden
+{
+  background: #3B556D;
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 3px;
+  border-radius: 20px;
+  visibility: hidden;
+  
+ 
+}
+
+.profile__hidden.active
+{
+ visibility: visible;
+  
+ 
+}
+.profile__hidden img 
+{
+  width: 60px;
+  height: 60px;
+  margin-bottom: -20px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+
+.profile__hidden a i 
+{
+  margin-right: 20px;
+  color:#5FC2BA;
+}
+header nav .nav__links .link__item .hidden__services .service__hidden a:hover,header nav .nav__links .link__item .hidden__services .service__hidden a.active 
+{
+  color:#5FC2BA;
+  background: none;
+ 
+  
+
+}
+
+
+
+.profile__hidden a:hover
+{
+  
+  color:#5FC2BA;
+}
+
+@media (max-width:991px)
+{
+
+  header 
+  {
+    padding: 0 20px;
+  }
+
+  .menu-toggle 
+  {
+    visibility: visible;
+    margin-left: 10px;
+    
+  }
+
+  header nav 
+  {
+   position: absolute;
+   width: 100%;
+   height: calc(100vh -50px);
+   background:#3B556D ;
+   top:80px;
+   left:-100%;
+   transition: 0.5s;
+
+  }
+  header nav.active
+  {
+    left:0;
+  }
+
+  header nav .nav__links
+  {
+    display: block;
+    text-align: center;
+    
+
+  }
+  .logo__container .logoname
+  {
+    display: none;
+  }
+  header nav .nav__links .link__item a 
+  {
+    border-bottom: 1px solid rgba(0,0,0,.2) ;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ 
+
+  header nav .nav__links .link__item .hidden__services
+{
+  
+  
+
+  position: relative;
+  
+  margin-top: 2px;
+  
+  
+}
+
+header nav .nav__links .link__item
+{
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+header nav .nav__links .link__item .hidden__services .service__hidden
+{
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  line-height: 80px;
+}
+
+header nav .nav__links .link__item .hidden__services .service__hidden a:hover 
+{
+  
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.container_resto{
+    margin-top: 0px;
+   justify-content: center;
+}
+p {
+    color: #0B162C;
+}
+
+a,a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Services*/
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.c4{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 500px;
+      width: 77%;
+    }
+  }
+
+.serviceRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.service {
+    margin:auto;
+    margin-left: 20px;
+    height: 420px;
+    width: 350px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5fc2ba2d;
+    box-shadow: 0 1px 2px 0 #137b8ba2;
+    color: #1C2942;
+    transition: 0.3s ease-in;
+}
+
+.service img {
+    margin-bottom: 10px;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:initial;
+    width: 95%;
+    height: 200px;
+}
+.service h2 {
+    text-align: center;
+    color: #1C2942;
+    font-size: 20px;
+}
+.fbpage a{
+    color:#1C2942;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 5px;
+}
+.service p {
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+}
+.service:hover {
+    transform: scale(1.085);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+    .serviceRow {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .serviceRow {
+        grid-template-columns: 1fr;
+    }
+    
+}
+.restolocation{
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
